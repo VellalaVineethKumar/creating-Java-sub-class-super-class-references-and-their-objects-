@@ -3,11 +3,11 @@ class Test
 {
 	public static void main(String[] args) throws InterruptedException {
 		
-		//with reference of super class and object of SuperClass lets see what all can be done
+		//with reference of super class and object of SuperClass 
 		SuperClass su=new SuperClass();//1
-		su.method1(); //only method 1 can be accessed using SuperClass method and SuperClass object
+		su.method1(); //only method 1 can be accessed using SuperClass method and SuperClass object because the SuperClass reference knows about the members of SuperClass object
 		
-		TimeUnit.SECONDS.sleep(3);//this method has been used for 3 seconds delay before calling the next method 
+		TimeUnit.SECONDS.sleep(3);//3 seconds delay before calling the next method
 		//with reference of SuperClass creating a SubClass member
 		SuperClass su1= new SubClass();//2
 		su1.method1();
@@ -23,11 +23,11 @@ class Test
 		//SubClass sb=new SuperClass();//3
 		//you cannot create an SuperClass object by referring to SubClass
 		//ie SubClass reference cannot create an object of SuperClass
-		TimeUnit.SECONDS.sleep(3);//this method has been used for 3 seconds delay before calling the next method 
+		TimeUnit.SECONDS.sleep(3);// 3 seconds delay before calling the next method 
 		SubClass sb1=new SubClass();//4
 		sb1.method1();
 		sb1.method2();
-		//wooah a SubClass reference with SubClass object can implement both the methods from SubClass and also from SuperClass
+		//wooah a SubClass reference with SubClass object can implement both the methods from SubClass and also from SuperClass because the SubClass reference knows abut the SubClass object methods and also SuperClass object methods
 		
 	}
 }
