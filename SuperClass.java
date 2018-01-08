@@ -14,7 +14,8 @@ class Test
 	//even by creating an object of SubClass with reference of SuperClass we can access only method 1 because 
 	//the reference pointer only knows about the methods of SuperClass as it is pointing to SuperClass 
 		
-	/*
+	/* you dont have to worry about this comment until you reach the last line
+
 		su1.method2();
 	*/
 	
@@ -37,7 +38,7 @@ class Test
 				{
 					System.out.println("This method is from SuperClass");
 				}
-			/*
+			/* you dont have to worry about this comment until you reach the last line
 			 *this method is created so that the SuperClass reference knows about the subclass method which will be overridden in subclass 
 				public void method2()
 				{
